@@ -1,0 +1,70 @@
+html {
+  font-size: 10pt;
+}
+body {
+  max-width: 360px;
+  margin: auto;
+  font-family: "Nunito", sans-serif;
+  font-size: 1.125rem;
+  color: var(--clr-light);
+}
+
+pre {
+  display: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+}
+
+.featured-story {
+  display: none;
+}
+
+.story-list {
+  padding: 0;
+  /* */
+  list-style-type: none;
+}
+
+.story-list article {
+  margin: 3rem 0;
+  padding: 10%;
+  border: 1px solid #ddd;
+  margin-bottom: 10%;
+  border-radius: 10px;
+}
+
+.story-list article > :first-child {
+  margin-top: 0;
+}
+
+.story-list article > :last-child {
+  margin-bottom: 0;
+}
+
+.story-list h1,
+.story-list .description,
+.story-list figure,
+.story-list .content,
+.story-list .source {
+  margin: 1rem 0;
+}
+
+.story-list h1 a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.story-list h1 a:hover {
+  color: orange;
+}
+
+.date {
+  text-align: right;
+}
