@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News Stories List Template</title>
+    <style>[v-cloak] { display: none; } img {max-width: 100%;}</style>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a6f004672e.js" crossorigin="anonymous"></script>
+    <script src="main.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div class = "header_div">
+    <header class="header">
+      
+      <a href="" class="navbar__toogleBtn">
+          <i class="fa-solid fa-bars"></i></a>
+      
+      <img src="brt_orange_logo.svg" width= "70px"   alt="" class="logo">
+
+      <nav class="nav">
+          <ul class="nav__list">
+              <li class="nav__list-item"><a href="" class="nav__link">World</a></li>
+              <li class="nav__list-item"><a href="" class="nav__link">Sports</a></li>
+              <li class="nav__list-item"><a href="" class="nav__link">Politics</a></li>
+              <li class="nav__list-item"><a href="" class="nav__link">Business</a></li>
+              <li class="nav__list-item"><a href="" class="nav__link1">Sign Up / Login</a></li>
+          </ul>
+      </nav>
+  </header>
+</div>
+<div class = "main-main-content">
+
+    <div id="news-stories-list-template" v-cloak>
+
+      <!-- The Featured Story -->
+
+      <div class="featured-story">
+        <article>
+        <!-- Story title (linked) -->
+        <h1>
+        <a class = "featured-title" v-bind:href="featuredStory.url">{{ featuredStory.title }}</a>
+        </h1>
+        <!-- Story description -->
+      <div class="featured-contents-no-title">
+        <figure class = "featured-image1"> 
+          <img class="featured-image" v-bind:src="featuredStory.image">
+        </figure>
+        <div class = "featured-content">
+          <span v-html="featuredStory.content"></span>
+          </div>
+        <p class="description">
+        {{ featuredStory.description }}
+        </p>
+
+        <!-- Story source (linked) -->
+        <div class = "featured-source">
+          <em>
+            Published
+            <span class="date">
+              {{ featuredStory.date }}
+            </span>
+            by
+            <a v-bind:href="featuredStory.source.url">{{ featuredStory.source.name }}</a>
+          </em>
+        </div>
+      </div>
+      </article>
+      </div>
+
+      <!-- Debugging info, you can comment this section out when you don't need it. -->
+      <pre>The featured story object: {{ featuredStory | json }}</pre>
+
+      <!-- Stories List -->
+      <ul class = "story-list">
+        <!-- This 'loop' generates a list item for each story in the 'stories' array. -->
+        <li v-for="story in stories">
+          <article> <!-- represents an article-->
+          <!-- Story title (linked) -->
+          <h1> <!-- article h1-->
+            <a class = "title" v-bind:href="story.url">{{ story.title }}</a>
+          </h1>
+          <!-- Story description -->
+          <p class="description">
+            {{ story.description }}
+          </p>
+<!-- Story image -->
+          <figure> <!-- group together things of visual representations-->
+            <img class = "storyimage" v-bind:src="story.image">
+          </figure>
+
+          <!-- Story content (truncated) -->
+          <div class = "content">
+            <span v-html="story.content"></span> 
+            <!-- if content includes html, it will take care of it-->
+          </div>
+          <!-- Story source (linked) -->
+          <div class = "source">
+            <em>
+              Published
+              <span class="date">
+                {{ story.date}}
+              </span>
+              by
+              <a v-bind:href="story.source.url">{{ story.source.name }}
+              </a>
+            </em>
+          </div>
+
+        </article>
+        
+        </li>
+      </ul>
+
+      <!-- Debugging info, you can comment this section out when you don't need it. -->
+      <pre>The stories array: {{ stories | json }}</pre>
+    
+    </div>
+
+    <!-- These scripts load the Vue library, and the actual story content. -->
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="https://abesiemsen.github.io/layout2023spring-resources/projects/news-story-template/data.js"></script>
+  </div> 
+    <footer class="footer">
+      <div class="footer_container">
+          <img src="brt_orange_logo.svg" width= "100px" alt="" class="logo1">
+              <div class="footer-col">
+                  <h4 class = "ft_about">About</h4>
+                  <ul class = "ft_ul">
+                      <li class="ft_list"><a href="#">About BRT news</a></li>
+                      <li class="ft_list"><a href="#">BRT Store</a></li>
+                      <li class="ft_list"><a href="#">Sitemap</a></li>
+                  </ul>
+              </div>
+              <div class="footer-col">
+                  <h4 class = "ft_policy">Policy</h4>
+                  <ul class = "ft_ul">
+                      <li class="ft_list"><a href="#">Terms of Use</a></li>
+                      <li class="ft_list"><a href="#">Privacy Policy</a></li>
+                  </ul>
+              </div>
+              <div class="footer-col">
+                  <h4 class ="ft_contact">Contact</h4>
+                  <ul class = "ft_ul">
+                      <li class="ft_list"><a href="#">Contact us</a></li>
+                      <li class="ft_list"><a href="FAQ.html">FAQ</a></li>
+                  </ul>
+              </div>
+              <div class="footer-col">
+                  <h4 class="ft_social">Follow BRT</h4>
+                  <div class="social-links">
+                      <a href="#"><i class="fab fa-facebook-f"></i></a>
+                      <a href="#"><i class="fab fa-instagram"></i></a>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <div class= "copyright_disclosure">
+        <div>
+          Collected from API data source &copy; <a href="https://gnews.io/" class="api_data"> Gnews</a> &copy;
+        </div>
+      </div>
+ </footer>
+
+
+  </body>
+</html>
