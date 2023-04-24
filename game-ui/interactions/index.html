@@ -1,0 +1,238 @@
+
+<html>
+
+<head>
+<link rel="stylesheet" href="css/styles.css">
+<title> Monster Battle _ Taeho Lee </title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+	<img class="background" src="images/battlebackground.png" alt="">
+
+
+<div class="battlescreen">
+	<div class="halfbattlescreen1">
+		<div class="left">
+			<div class="opponenthealthcontainer">
+				<div class="outerrectangle1">
+					<div class="recinnercomp">
+						<ul class="healthcontent">
+							<li class="healthcomponentlist">
+								<span class="name">Nidoking
+								</span>
+								<span class="level">Lv 100</span>
+							</li>
+							<li class="healthcomponentlist">
+								
+								<div id = "healthbar1" class="healthbar">
+								<div class="health"> HP </div>
+									<div class="healthbarinner">
+										<div class="healthslider"></div>
+									</div>
+								</div>
+							</li>
+							<li class="healthcomponentlist"><span class="healthvalue">2101/2101</span></li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="shadow"></div>
+			</div>
+		</div>
+		<div class="right">
+
+			<div class="topmonster"></div>
+			
+		</div>
+	</div>
+	<div class="halfbattlescreen2">
+		<div class="left">
+		<div class="bottommonster"></div>
+
+		<div class="mission">
+			<div>
+				<p>
+					Time Elapsed
+				</p>
+			</div>
+			<div class="controls">
+
+
+
+				<div id="stopwatch" class="stopwatch">
+					<div class="stopwatch-background">
+
+						
+					</div>
+					<img src="images/bezel.svg" class="stopwatch-bezel">
+					<img src="images/button.svg" class="stopwatch-button">
+					<img src="images/needle.svg" class="stopwatch-needle">
+				</div>
+				
+			</div>
+		</div>
+		
+			
+			
+		</div>
+		<div class="right">
+			<div class="myhealthcontainer">
+				<div class="outerrectangle2">
+					<div class="recinnercomp">
+						<ul class="healthcontent">
+							<li class="healthcomponentlist">
+								<span class="name">Rhydon
+								</span>
+								<span class="level">Lv 52</span>
+							</li>
+							<li class="healthcomponentlist">
+								
+								<div id = "healthbar2" class="healthbar">
+								<div class="health"> HP </div>
+									<div class="healthbarinner">
+										<div class="healthslider"></div>
+									</div>
+								</div>
+							</li>
+							<li class="healthcomponentlist"><span class="healthvalue">163/200</span></li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="smalltriangle">
+				</div>
+				<div class="smallrectangle">
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<div class="bottomsection1">
+	<div class="bottombox1">
+		<div id = "firstfeedback" class="bottomboxinner1">
+			<div class="battlefeedback">
+				<p>Attack Earthquake was used! It was effective!</p>
+			</div>
+
+
+		</div>
+
+
+	</div>
+
+	<div class="bottomsection2">
+		<div class="bottombox2">
+			<div id="bottomboxinner2" class="bottomboxinner2">
+	
+				<div class="menutext">
+					<table style="width: 250%; height: 100%;">
+					<tr class="menutop">
+						<td id="monsterButton" class="menulist1"> Monster </td>
+						<td id="potionButton" class="menulist1"> Potion </td>
+					</tr>
+					<tr class="menubottom">
+						<td id="battleButton" class="menulist1"> Battle </td>
+						<td id="GiveUpButton" class="menulist1"> Give Up </td>
+					</tr>
+					</table>
+				</div>
+	
+			</div>
+
+			<div id="monsterBox" class="bottomboxinner3">
+	
+				<div class="menutext">
+					<table style="width: 250%; height: 100%;">
+					<tr class="menutop">
+						<td class="menulist2"> Koopa </td>
+						<td class="menulist2"> Pikachu </td>
+					</tr>
+					<tr class="menubottom">
+						<td class="menulist2"> Mario </td>
+						<td class="menulist2"> Zelda </td>
+					</tr>
+					</table>
+				</div>
+	
+			</div>
+
+			<div id="potionBox" class="bottomboxinner3">
+	
+				<div class="menutext">
+					<table style="width: 250%; height: 100%;">
+					<tr class="menutop">
+						<td class="menulist2"> Max Potion </td>
+						<td class="menulist2"> Hyper Potion </td>
+					</tr>
+					<tr class="menubottom">
+						<td class="menulist2">  Reg. Potion </td>
+						<td class="menulist2"> Super Potion </td>
+					</tr>
+					</table>
+				</div>
+	
+			</div>
+
+
+			<div id="battleBox" class="bottomboxinner3">
+	
+				<div class="menutext">
+					<table style="width: 250%; height: 100%;">
+					<tr class="menutop">
+						<td class="menulist2"> Earthquake </td>
+						<td class="menulist2"> Tackle </td>
+					</tr>
+					<tr class="menubottom">
+						<td class="menulist2"> Horn Drill </td>
+						<td class="menulist2"> Dig </td>
+					</tr>
+					</table>
+				</div>
+	
+			</div>
+
+			<div id="GiveUpBox" class="bottomboxinner3" >
+	
+				<div class="menutext">
+					<table style="width: 250%; height: 100%;">
+					<tr class="menutop">
+						<td class="menulist2"> Cancel </td>
+						<td class="menulist2"> Help </td>
+					</tr>
+					<tr class="menubottom">
+						<td class="menulist2"> Pause </td>
+						<td class="menulist2"> Run Away </td>
+					</tr>
+					</table>
+				</div>
+	
+			</div>
+
+
+		</div>
+
+		
+	
+</div>
+
+
+	
+</div>
+
+
+
+
+
+<script src="js/scripts.js">
+
+
+	
+</script>
+</body>
