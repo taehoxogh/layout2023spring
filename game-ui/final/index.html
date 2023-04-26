@@ -1,0 +1,313 @@
+
+<html>
+
+<head>
+<link rel="stylesheet" href="css/styles.css">
+<title> Monster Battle _ Taeho Lee </title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+	<img class="background" src="images/battlebackground.png" alt="">
+
+
+<div class="battlescreen">
+	<div class="halfbattlescreen1">
+		<div class="left">
+			<div class="opponenthealthcontainer">
+				<div class="outerrectangle1">
+					<div class="recinnercomp">
+						
+						<ul class="healthcontent">
+							<li class="healthcomponentlist">
+								<span class="opponentname">Luigi (Jacob3013)
+								</span>
+								<span class="level">Lv 100</span>
+							</li>
+							<li class="healthcomponentlist">
+								
+								<div id = "healthbar1" class="healthbar">
+								<div class="health"> HP </div>
+									<div class="healthbarinner">
+										<div class="healthslider"></div>
+									</div>
+								</div>
+							</li>
+							<li class="healthcomponentlist"><span class="healthvalue">2101/2101</span></li>
+						</ul>
+					</div>
+
+			<div class = "damageinfo">
+				<img src="images/totaldamage.svg" class="damagecontainer">
+
+			</div>
+			<div class = "roundinfo">
+				<img src="images/round.svg" class="roundcontainer">
+
+			</div>
+
+
+				</div>
+
+			</div>
+		</div>
+		<div class="right">
+
+			<div class="topmonster"></div>
+			
+		</div>
+	</div>
+	<div class="halfbattlescreen2">
+		<div class="left">
+		<div class="bottommonster"></div>
+
+		<div class="mission">
+			<div class="clocktext">
+				<p>
+					Time Elapsed
+				</p>
+			</div>
+			<div class="controls">
+
+				<div id="timeinfo">
+
+					<img src="images/numpanel.svg" class="timecontainer">
+			
+					<div class="timeamount">
+						<div class="amount">
+						</div>
+			
+					</div>
+				</div>
+				
+				
+
+				
+			</div>
+		</div>
+		
+
+		
+			
+			
+		</div>
+		<div class="right">
+			<div class="myhealthcontainer">
+				<div class="outerrectangle2">
+					<div class="recinnercomp">
+						<ul class="healthcontent">
+							<li class="healthcomponentlist">
+								<span class="myname">Mario (Me)
+								</span>
+								<span class="level">Lv 52</span>
+							</li>
+							<li class="healthcomponentlist">
+								
+								<div id = "healthbar2" class="healthbar">
+								<div class="health"> HP </div>
+									<div class="healthbarinner">
+										<div class="healthslider"></div>
+									</div>
+								</div>
+							</li>
+							<li class="healthcomponentlist"><span class="healthvalue">163/200</span></li>
+						</ul>
+					</div>
+				</div>
+
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<div class="bottomsection1">
+	<div class="bottombox1">
+		<div id = "firstfeedback" class="bottomboxinner1">
+			<div class="battlefeedback">
+				<p>Attack Earthquake was used! It was effective!</p>
+			</div>
+
+
+		</div>
+
+
+	</div>
+
+	<div class="bottomsection2">
+		<div class="bottombox2">
+			<div id="bottomboxinner2" class="bottomboxinner2">
+	
+				<div class="menutext">
+					<table style="width: 250%; height: 100%;">
+					<tr class="menutop">
+						<td id="monsterButton" class="menulist1"> Monster </td>
+						<td id="potionButton" class="menulist1"> Potion </td>
+					</tr>
+					<tr class="menubottom">
+						<td id="battleButton" class="menulist1"> Battle </td>
+						<td id="GiveUpButton" class="menulist1"> Give Up </td>
+					</tr>
+					</table>
+				</div>
+	
+			</div>
+
+			<div id="monsterBox" class="bottomboxinner3">
+	
+				<div class="menutext">
+					<table style="width: 250%; height: 100%;">
+					<tr class="menutop">
+						
+						<td class="menulist2"> Mario <img class="mario" src="images/mario.png" alt=""></td>
+						<td class="menulist2"> Pikachu  <img class="pikachu" src="images/pikachu.png" alt=""> </td>
+					</tr>
+					<tr class="menubottom">
+						<td class="menulist2"> Rhydon <img class="rhydon" src="images/rhydon.png" alt=""></td>
+						<td class="menulist2"> Luigi <img class="Luigi" src="images/luigi.png" alt=""></td>
+					</tr>
+					</table>
+				</div>
+	
+			</div>
+
+			<div id="potionBox" class="bottomboxinner3">
+	
+				<div class="menutext">
+					<table style="width: 250%; height: 100%;">
+					<tr class="menutop">
+						<td id="MaxPotion" class="menulist2"> Max Potion <img class="maxpotion" src="images/maxpotion.png" alt=""> </td>
+						<td id="HyperPotion" class="menulist2"> Hyper Potion <img class="hyperpotion" src="images/hyperpotion.png" alt=""> </td>
+					</tr>
+					<tr class="menubottom">
+						<td id="RegPotion" class="menulist2"> Potion <img class="potion" src="images/potion.png" alt=""> </td>
+						<td id="SuperPotion" class="menulist2"> Super Potion <img class="superpotion" src="images/superpotion.png" alt=""> </td>
+					</tr>
+					</table>
+				</div>
+	
+			</div>
+
+
+			<div id="battleBox" class="bottomboxinner3">
+	
+				<div class="menutext">
+					<table style="width: 250%; height: 100%;">
+					<tr class="menutop">
+						<td class="menulist2"> Dust (5/5) </td>
+						<td class="menulist2"> Tackle (3/5) </td>
+					</tr>
+					<tr class="menubottom">
+						<td class="menulist2"> Horn Drill (2/5)  </td>
+						<td class="menulist2"> Dig (1/5)</td>
+					</tr>
+					</table>
+				</div>
+	
+			</div>
+
+			<div id="GiveUpBox" class="bottomboxinner3" >
+	
+				<div class="menutext">
+					<table style="width: 250%; height: 100%;">
+					<tr class="menutop">
+						<td class="menulist2"> Cancel </td>
+						<td class="menulist2"> Help </td>
+					</tr>
+					<tr class="menubottom">
+						<td class="menulist2"> Pause </td>
+						<td class="menulist2"> Run Away </td>
+					</tr>
+					</table>
+				</div>
+	
+			</div>
+
+
+
+
+			<div id="maxpotionexplanation" class="bottomboxinner3">
+	
+				<div class="potiontext">
+
+			Max Potion can be used to fully restore HP <br> (2 Left / 5 Total)
+			<button id="button" class="attackbutton">Use</button>
+
+				</div>
+
+			</div>
+
+
+			<div id="hyperpotionexplanation" class="bottomboxinner3">
+	
+				<div class="potiontext">
+
+			Hyper Potion heals the monster's health by 150 HP <br> (5 Left / 5 Total)
+			<button id="button" class="attackbutton">Use</button>
+
+				</div>
+
+			</div>
+
+			<div id="regpotionexplanation" class="bottomboxinner3">
+	
+				<div class="potiontext">
+
+			Regular Potion heals the monster's health by 60 HP <br> (3 Left / 10 Total)
+			<button id="button" class="attackbutton">Use</button>
+
+				</div>
+
+			</div>
+
+
+			<div id="superpotionexplanation" class="bottomboxinner3">
+	
+				<div class="potiontext">
+
+			Super Potion heals the monster's health by 100 HP <br> (7 Left / 10 Total)
+			<button id="button" class="attackbutton">Use</button>
+
+				</div>
+
+			</div>
+
+
+			<div id="giveupexplanation" class="bottomboxinner3">
+	
+				<div class="potiontext">
+
+			Do you really want to give up this battle? <br>
+			<button id="button" class="attackbutton">Yes</button>
+			<button id="button" class="nobutton">Cancel</button>
+				</div>
+
+			</div>
+
+
+
+
+		</div>
+
+		
+	
+</div>
+
+
+	
+</div>
+
+
+
+
+
+<script src="js/scripts.js">
+
+
+	
+</script>
+</body>
